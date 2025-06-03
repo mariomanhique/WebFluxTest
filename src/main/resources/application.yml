@@ -1,1 +1,13 @@
-spring.application.name=WebFluxTest
+server:
+  port: 9090
+
+spring:
+  flyway:
+    enabled: true
+    url: jdbc:postgresql://dpg-d0vcpcu3jp1c73e1paig-a.frankfurt-postgres.render.com:5432/server_sent_events
+    user: server_sent_events_user
+    password: Kquzm4lI7NK2fwa0JM2WrgqWjP5XFDF3
+  r2dbc:
+    url: r2dbc:postgresql://dpg-d0vcpcu3jp1c73e1paig-a.frankfurt-postgres.render.com:5432/server_sent_events
+    username: server_sent_events_user
+    password: Kquzm4lI7NK2fwa0JM2WrgqWjP5XFDF3
